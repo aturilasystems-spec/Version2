@@ -137,7 +137,7 @@ function PricingPage() {
       </section>
 
       {/* How Pricing Works */}
-      <section id="how-pricing-works" className="py-20 px-6">
+      <section id="how-pricing-works" className="pt-32 pb-20 px-6">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">How Our Pricing Works</h2>
