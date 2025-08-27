@@ -89,7 +89,7 @@ function ContactForm() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-1">Email Us</h3>
-                      <p className="opacity-90">hello@aturilasystems.com</p>
+                      <p className="opacity-90">aturilasystems@gmail.com</p>
                     </div>
                   </div>
                   
@@ -99,7 +99,7 @@ function ContactForm() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-1">Call Us</h3>
-                      <p className="opacity-90">+1 (555) 123-4567</p>
+                      <p className="opacity-90">+44 7399826159</p>
                     </div>
                   </div>
                   

@@ -342,7 +342,7 @@ function HomePage() {
                     <Mail size={24} className="text-white" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Email Us</h3>
-                  <p className="opacity-90">hello@aturilasystems.com</p>
+                  <p className="opacity-90">aturilasystems@gmail.com</p>
                 </div>
                 
                 <div className="flex flex-col items-center text-center">
@@ -350,7 +350,7 @@ function HomePage() {
                     <Phone size={24} className="text-white" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-                  <p className="opacity-90">+1 (555) 123-4567</p>
+                  <p className="opacity-90">+44 7399826159</p>
                 </div>
                 
                 <div className="flex flex-col items-center text-center">
