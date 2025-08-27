@@ -124,7 +124,7 @@ function ContactForm() {
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mt-8">
                   <h3 className="text-xl font-bold mb-4 text-cyan-200">Why Choose Aturila Systems?</h3>
                   <ul className="space-y-2 opacity-90">
-                    <li>• Expert team with 10+ years of AI experience</li>
+                    <li>• Expert team specialised in the AI and automation industry</li>
                     <li>• 98% client satisfaction rate</li>
                     <li>• 24/7 support and monitoring</li>
                     <li>• Custom solutions tailored to your needs</li>
