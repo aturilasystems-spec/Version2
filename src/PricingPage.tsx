@@ -98,7 +98,6 @@ function PricingPage() {
       <section className="py-12 px-6">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Pricing Philosophy</h2>
             <p className="text-lg md:text-xl opacity-90 leading-relaxed">
               We believe in transparent, fair pricing that reflects the true value and complexity of your project. 
               Rather than one-size-fits-all packages, we work with you to understand your specific needs and 
