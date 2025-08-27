@@ -117,7 +117,7 @@ function PricingPage() {
             <div className="mt-12">
               <button 
                 onClick={() => {
-                  const element = document.getElementById('pricing-philosophy');
+                  const element = document.getElementById('how-pricing-works');
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
                   }
@@ -137,7 +137,7 @@ function PricingPage() {
       </section>
 
       {/* How Pricing Works */}
-      <section className="py-20 px-6">
+      <section id="how-pricing-works" className="py-20 px-6">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">How Our Pricing Works</h2>
