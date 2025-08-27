@@ -90,12 +90,25 @@ function PricingPage() {
               Flexible pricing tailored to your business needs and project complexity. 
               Every solution is custom-built, so every price is personalized.
             </p>
+            <div className="mt-12">
+              <button 
+                onClick={() => {
+                  const element = document.getElementById('pricing-philosophy');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-lg font-medium hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
+              >
+                Scroll down to explore our pricing
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Pricing Philosophy */}
-      <section className="py-12 px-6">
+      <section id="pricing-philosophy" className="py-20 px-6">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
             <p className="text-lg md:text-xl opacity-90 leading-relaxed">
