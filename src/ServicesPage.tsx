@@ -134,7 +134,7 @@ function ServicesPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-6">
+      <section className="min-h-screen flex items-center justify-center px-6">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
@@ -142,14 +142,20 @@ function ServicesPage() {
               Comprehensive AI automation solutions designed to transform your business operations 
               and accelerate growth through intelligent technology.
             </p>
+            <div className="mt-12">
+              <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-lg font-medium">
+                Scroll down to explore our services
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Mission Statement */}
-      <section className="py-12 px-6">
+      <section className="py-20 px-6">
         <div className="container mx-auto">
           <div className="text-center max-w-4xl mx-auto animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-cyan-200">Our Mission</h2>
             <p className="text-lg md:text-xl opacity-90 leading-relaxed italic">
               Our mission is to help businesses reach their full potential through integrating 
               efficient digital systems within their operations and marketing departments, achieving limitless growth whilst heading into the future of modern technology.
