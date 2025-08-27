@@ -335,69 +335,42 @@ function HomePage() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
-              <div className="space-y-8">
-                <div className="flex items-center gap-4">
-                  <div className="bg-cyan-400 w-12 h-12 rounded-full flex items-center justify-center">
-                    <Mail size={20} className="text-white" />
+            <div className="max-w-2xl mx-auto">
+              <div className="grid md:grid-cols-3 gap-8 mb-12">
+                <div className="flex flex-col items-center text-center">
+                  <div className="bg-cyan-400 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                    <Mail size={24} className="text-white" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-1">Email Us</h3>
-                    <p className="opacity-90">hello@aturilasystems.com</p>
-                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Email Us</h3>
+                  <p className="opacity-90">hello@aturilasystems.com</p>
                 </div>
                 
-                <div className="flex items-center gap-4">
-                  <div className="bg-blue-400 w-12 h-12 rounded-full flex items-center justify-center">
-                    <Phone size={20} className="text-white" />
+                <div className="flex flex-col items-center text-center">
+                  <div className="bg-blue-400 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                    <Phone size={24} className="text-white" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-1">Call Us</h3>
-                    <p className="opacity-90">+1 (555) 123-4567</p>
-                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Call Us</h3>
+                  <p className="opacity-90">+1 (555) 123-4567</p>
                 </div>
                 
-                <div className="flex items-center gap-4">
-                  <div className="bg-cyan-300 w-12 h-12 rounded-full flex items-center justify-center">
-                    <MapPin size={20} className="text-white" />
+                <div className="flex flex-col items-center text-center">
+                  <div className="bg-cyan-300 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                    <MapPin size={24} className="text-white" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-1">Visit Us</h3>
-                    <p className="opacity-90">123 Innovation Drive<br />Tech City, TC 12345</p>
-                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Visit Us</h3>
+                  <p className="opacity-90">123 Innovation Drive<br />Tech City, TC 12345</p>
                 </div>
               </div>
-
-              <form className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="bg-white/20 border border-white/30 rounded-lg px-4 py-3 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all duration-200"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Your Email"
-                    className="bg-white/20 border border-white/30 rounded-lg px-4 py-3 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all duration-200"
-                  />
-                </div>
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  className="w-full bg-white/20 border border-white/30 rounded-lg px-4 py-3 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all duration-200"
-                />
-                <textarea
-                  placeholder="Tell us about your project..."
-                  rows={4}
-                  className="w-full bg-white/20 border border-white/30 rounded-lg px-4 py-3 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all duration-200 resize-none"
-                ></textarea>
-                <button
-                  type="submit"
-                  className="w-full bg-white text-cyan-600 py-3 px-6 rounded-lg font-semibold hover:bg-cyan-100 transition-all duration-300 transform hover:scale-105"
+              
+              <div className="text-center">
+                <button 
+                  onClick={() => navigateToPage('/contact')}
+                  className="bg-white text-cyan-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-cyan-100 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto group"
                 >
-                  Send Message
+                  Contact Us Today
+                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
                 </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
