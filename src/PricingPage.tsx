@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Calculator, Clock, Shield, CheckCircle, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 function PricingPage() {
   const navigate = useNavigate();
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const pricingFeatures = [
     {
@@ -52,7 +59,9 @@ function PricingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-blue-500 to-cyan-600 text-white">
       {/* Header */}
-      <header className="bg-cyan-900/95 backdrop-blur-lg shadow-lg">
+      <header className={`fixed w-full z-50 transition-all duration-300 ${
+        scrollY > 50 ? 'bg-cyan-900/95 backdrop-blur-lg shadow-lg' : 'bg-transparent'
+      }`}>
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <img 
