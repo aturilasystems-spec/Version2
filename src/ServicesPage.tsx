@@ -137,6 +137,30 @@ function ServicesPage() {
       <section className="min-h-screen flex items-center justify-center px-6">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
+            {/* Decorative Icon Grid */}
+            <div className="flex justify-center mb-8">
+              <div className="relative">
+                {/* Main central icon */}
+                <div className="bg-white/10 backdrop-blur-sm w-24 h-24 rounded-2xl flex items-center justify-center border border-white/20">
+                  <Bot size={48} className="text-cyan-300" />
+                </div>
+                
+                {/* Floating accent icons */}
+                <div className="absolute -top-4 -right-4 bg-cyan-400/20 w-12 h-12 rounded-xl flex items-center justify-center animate-pulse">
+                  <Zap size={20} className="text-cyan-300" />
+                </div>
+                <div className="absolute -bottom-4 -left-4 bg-blue-400/20 w-12 h-12 rounded-xl flex items-center justify-center animate-pulse delay-300">
+                  <Target size={20} className="text-blue-300" />
+                </div>
+                <div className="absolute top-1/2 -left-8 transform -translate-y-1/2 bg-cyan-300/20 w-8 h-8 rounded-lg flex items-center justify-center animate-pulse delay-150">
+                  <MessageSquare size={14} className="text-cyan-200" />
+                </div>
+                <div className="absolute top-1/2 -right-8 transform -translate-y-1/2 bg-blue-300/20 w-8 h-8 rounded-lg flex items-center justify-center animate-pulse delay-500">
+                  <Globe size={14} className="text-blue-200" />
+                </div>
+              </div>
+            </div>
+            
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
               Comprehensive AI automation solutions designed to transform your business operations 
@@ -323,6 +347,31 @@ function ServicesPage() {
           to {
             opacity: 1;
             transform: translateY(0);
+          }
+        }
+        
+        .animate-pulse {
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        .delay-150 {
+          animation-delay: 150ms;
+        }
+        
+        .delay-300 {
+          animation-delay: 300ms;
+        }
+        
+        .delay-500 {
+          animation-delay: 500ms;
+        }
+        
+        @keyframes pulse {
+          0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: .5;
           }
         }
       `}</style>
