@@ -82,7 +82,7 @@ function PricingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-6">
+      <section className="min-h-screen flex items-center justify-center px-6">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
             {/* Decorative Icon Grid */}
