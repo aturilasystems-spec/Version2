@@ -283,14 +283,6 @@ function HomePage() {
       {/* Services Section */}
       <section id="services" className="py-20 px-6 bg-gradient-to-l from-cyan-600 to-blue-500">
         <div className="container mx-auto">
-          {/* Mission Statement */}
-          <div className="text-center max-w-3xl mx-auto animate-fade-in-up mb-12">
-            <p className="text-lg md:text-xl opacity-80 leading-relaxed italic">
-              Our mission is to help businesses reach their full potential through integrating 
-              efficient digital systems within their operations and marketing departments, achieving limitless growth whilst heading into the future of modern technology.
-            </p>
-          </div>
-
           <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h2>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
