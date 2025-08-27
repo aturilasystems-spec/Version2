@@ -271,10 +271,6 @@ function HomePage() {
                 alt="AI Technology"
                 className="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute -bottom-6 -right-6 bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30">
-                <div className="text-2xl font-bold">500+</div>
-                <div className="text-sm opacity-90">Projects Completed</div>
-              </div>
             </div>
           </div>
         </div>
