@@ -133,15 +133,7 @@ function PricingPage() {
 
       {/* Pricing Philosophy */}
       <section id="pricing-philosophy" className="py-20 px-6">
-        <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
-            <p className="text-lg md:text-xl opacity-90 leading-relaxed">
-              We believe in transparent, fair pricing that reflects the true value and complexity of your project. 
-              Rather than one-size-fits-all packages, we work with you to understand your specific needs and 
-              provide pricing that matches the scope and scale of your automation requirements.
-            </p>
-          </div>
-        </div>
+        <div className="container mx-auto"></div>
       </section>
 
       {/* How Pricing Works */}
@@ -198,6 +190,14 @@ function PricingPage() {
               <h3 className="text-xl font-bold mb-3">Project Delivery</h3>
               <p className="opacity-90">We build and deploy your solution with ongoing support included</p>
             </div>
+          </div>
+          
+          <div className="max-w-4xl mx-auto text-center mt-16 animate-fade-in-up">
+            <p className="text-lg md:text-xl opacity-90 leading-relaxed">
+              We believe in transparent, fair pricing that reflects the true value and complexity of your project. 
+              Rather than one-size-fits-all packages, we work with you to understand your specific needs and 
+              provide pricing that matches the scope and scale of your automation requirements.
+            </p>
           </div>
         </div>
       </section>
