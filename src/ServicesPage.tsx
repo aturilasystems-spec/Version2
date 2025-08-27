@@ -193,7 +193,7 @@ function ServicesPage() {
       </section>
 
       {/* Mission Statement */}
-      <section id="mission" className="py-20 px-6">
+      <section id="mission" className="py-32 px-6">
         <div className="container mx-auto">
           <div className="text-center max-w-4xl mx-auto animate-fade-in-up">
             <p className="text-lg md:text-xl opacity-90 leading-relaxed italic">
