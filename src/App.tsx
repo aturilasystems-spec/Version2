@@ -227,7 +227,7 @@ function HomePage() {
             <div className="animate-fade-in-up">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Us?</h2>
               <p className="text-xl mb-8 opacity-90 leading-relaxed">
-                With over a decade of experience in AI and automation, we're your trusted partner 
+                With a dedicated and experienced team in AI and digital automation, we're your trusted partner 
                 for your digital transformation. Our team of experts delivers cutting-edge solutions 
                 that drive real results.
               </p>
