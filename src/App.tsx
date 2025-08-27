@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
-import { Menu, X, ArrowRight, Bot, Zap, Target, Users, Mail, Phone, MapPin, ChevronDown } from 'lucide-react';
+import { Menu, X, ArrowRight, Bot, Zap, Target, Users, Mail, Phone, Instagram, ChevronDown } from 'lucide-react';
 import ContactForm from './ContactForm';
 import ServicesPage from './ServicesPage';
 import PricingPage from './PricingPage';
@@ -355,10 +355,17 @@ function HomePage() {
                 
                 <div className="flex flex-col items-center text-center">
                   <div className="bg-cyan-300 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                    <MapPin size={24} className="text-white" />
+                    <Instagram size={24} className="text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Visit Us</h3>
-                  <p className="opacity-90">123 Innovation Drive<br />Tech City, TC 12345</p>
+                  <h3 className="text-xl font-semibold mb-2">Follow Us</h3>
+                  <a 
+                    href="https://www.instagram.com/aturila.digital/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="opacity-90 hover:opacity-100 hover:text-cyan-200 transition-all duration-200"
+                  >
+                    @aturila.digital
+                  </a>
                 </div>
               </div>
               

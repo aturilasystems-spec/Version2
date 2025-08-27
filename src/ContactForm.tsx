@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, Mail, Phone, MapPin, Send } from 'lucide-react';
+import { ArrowLeft, Mail, Phone, Instagram, Send } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 function ContactForm() {
@@ -105,11 +105,18 @@ function ContactForm() {
                   
                   <div className="flex items-center gap-4">
                     <div className="bg-cyan-300 w-12 h-12 rounded-full flex items-center justify-center">
-                      <MapPin size={20} className="text-white" />
+                      <Instagram size={20} className="text-white" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-1">Visit Us</h3>
-                      <p className="opacity-90">123 Innovation Drive<br />Tech City, TC 12345</p>
+                      <h3 className="text-xl font-semibold mb-1">Follow Us</h3>
+                      <a 
+                        href="https://www.instagram.com/aturila.digital/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="opacity-90 hover:opacity-100 hover:text-cyan-200 transition-all duration-200"
+                      >
+                        @aturila.digital
+                      </a>
                     </div>
                   </div>
                 </div>
