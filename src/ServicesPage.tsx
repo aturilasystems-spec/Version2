@@ -176,16 +176,24 @@ function ServicesPage() {
               and accelerate growth through intelligent technology.
             </p>
             <div className="mt-12">
-              <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-lg font-medium">
+              <button 
+                onClick={() => {
+                  const element = document.getElementById('mission');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-lg font-medium hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
+              >
                 Scroll down to explore our services
-              </div>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Mission Statement */}
-      <section className="py-20 px-6">
+      <section id="mission" className="py-20 px-6">
         <div className="container mx-auto">
           <div className="text-center max-w-4xl mx-auto animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-cyan-200">Our Mission</h2>
