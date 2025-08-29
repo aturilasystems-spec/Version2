@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Mail, Phone, Instagram, Send } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { supabase, type ContactSubmission } from './lib/supabase';
 
 function ContactForm() {
   const navigate = useNavigate();
@@ -12,6 +13,8 @@ function ContactForm() {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -21,20 +24,45 @@ function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      subject: '',
-      message: ''
-    });
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const submission: ContactSubmission = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || '',
+        company: formData.company || '',
+        subject: formData.subject,
+        message: formData.message
+      };
+
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert([submission]);
+
+      if (error) {
+        throw error;
+      }
+
+      setSubmitStatus('success');
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -235,12 +263,26 @@ function ContactForm() {
 
                   <button
                     type="submit"
-                    className="w-full bg-white text-cyan-600 py-4 px-6 rounded-lg font-semibold hover:bg-cyan-100 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group"
+                    disabled={isSubmitting}
+                    className="w-full bg-white text-cyan-600 py-4 px-6 rounded-lg font-semibold hover:bg-cyan-100 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                   >
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                     <Send size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
                   </button>
                 </form>
+
+                {/* Status Messages */}
+                {submitStatus === 'success' && (
+                  <div className="mt-4 p-4 bg-green-500/20 border border-green-400/30 rounded-lg text-center">
+                    <p className="text-green-200 font-medium">Thank you for your message! We will get back to you soon.</p>
+                  </div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <div className="mt-4 p-4 bg-red-500/20 border border-red-400/30 rounded-lg text-center">
+                    <p className="text-red-200 font-medium">There was an error sending your message. Please try again or contact us directly.</p>
+                  </div>
+                )}
 
                 <p className="text-sm opacity-70 mt-4 text-center">
                   * Required fields. We respect your privacy and will never share your information.
