@@ -40,7 +40,7 @@ function HomePage() {
             <img 
               src="/Aturila_Systems_Ltd_Logo_copy-removebg-preview copy.png" 
               alt="Aturila Systems" 
-             className="h-8 w-auto"
+              className="h-8 w-auto"
             />
             
             {/* Desktop Navigation */}
@@ -119,14 +119,14 @@ function HomePage() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <div className="animate-fade-in-up">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight" itemProp="headline">
                 Automate Your
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-blue-200">
                   Business with AI
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
-                Transform your business with cutting-edge AI automation systems. 
+              <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed" itemProp="description">
+                Aturila Digital (Aturila Systems) transforms your business with cutting-edge AI automation systems. 
                Streamline operations, boost efficiency, and unlock unprecedented growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -153,21 +153,20 @@ function HomePage() {
       <section className="py-20 px-6 bg-gradient-to-r from-blue-600 to-cyan-500">
         <div className="container mx-auto">
           <div className="text-center mb-12 animate-fade-in-up">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">About Our Industry</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">About AI Automation Industry - Aturila Digital</h2>
           </div>
 
           <div className="max-w-5xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="animate-fade-in-up">
-                <h3 className="text-2xl md:text-3xl font-bold mb-6 text-cyan-200">The Future is Automated</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-6 text-cyan-200">The Future is Automated with Aturila Systems</h3>
                 <p className="text-lg mb-6 opacity-90 leading-relaxed">
-                  Artificial Intelligence and its use in automation is revolutionizing how businesses operate across every industry. 
+                  Aturila Digital specializes in Artificial Intelligence and automation solutions that revolutionize how businesses operate across every industry. 
                   What once required hours of manual work can now be completed in minutes with intelligent systems that 
                   learn, adapt, and improve over time.
                 </p>
                 <p className="text-lg mb-6 opacity-90 leading-relaxed">
-                  From processing invoices and managing customer inquiries to analyzing market trends and scheduling appointments, 
-                  AI-powered automation handles repetitive tasks with unprecedented accuracy and speed. This transformation 
+                  Aturila Systems provides AI-powered automation that handles everything from processing invoices and managing customer inquiries to analyzing market trends and scheduling appointments with unprecedented accuracy and speed. This transformation 
                   allows human workers to focus on creative problem-solving, strategic thinking, and building meaningful 
                   relationships with customers.
                 </p>
@@ -176,7 +175,7 @@ function HomePage() {
               <div className="relative">
                 <img 
                   src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="AI Automation Technology"
+                  alt="Aturila Digital AI Automation Technology Solutions"
                   className="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -225,10 +224,10 @@ function HomePage() {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Us?</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Aturila Digital?</h2>
               <p className="text-xl mb-8 opacity-90 leading-relaxed">
-                With a dedicated and experienced team in AI and digital automation, we're your trusted partner 
-                for your digital transformation. Our team of experts delivers cutting-edge solutions 
+                Aturila Systems has a dedicated and experienced team in AI and digital automation, making us your trusted partner 
+                for digital transformation. Aturila Digital's team of experts delivers cutting-edge solutions 
                 that drive real results.
               </p>
               
@@ -268,7 +267,7 @@ function HomePage() {
             <div className="relative">
               <img 
                 src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                alt="AI Technology"
+                alt="Aturila Digital AI Technology Team and Solutions"
                 className="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -280,9 +279,9 @@ function HomePage() {
       <section id="services" className="py-20 px-6 bg-gradient-to-l from-cyan-600 to-blue-500">
         <div className="container mx-auto">
           <div className="text-center mb-12 animate-fade-in-up">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Aturila Digital Services - AI Automation Solutions</h2>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              We specialize in creating custom AI automation systems that revolutionize how businesses operate
+              Aturila Systems specializes in creating custom AI automation systems that revolutionize how businesses operate
             </p>
           </div>
 
@@ -291,9 +290,9 @@ function HomePage() {
               <div className="bg-cyan-400 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Bot size={32} className="text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Process Automation</h3>
+              <h3 className="text-2xl font-bold mb-4">AI Process Automation</h3>
               <p className="opacity-90 leading-relaxed">
-                Automate repetitive tasks and workflows with intelligent AI systems that learn and adapt to your business needs.
+                Aturila Digital automates repetitive tasks and workflows with intelligent AI systems that learn and adapt to your business needs.
               </p>
             </div>
 
@@ -301,9 +300,9 @@ function HomePage() {
               <div className="bg-blue-400 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Target size={32} className="text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Custom Website Designs</h3>
+              <h3 className="text-2xl font-bold mb-4">Custom Website Design by Aturila Systems</h3>
               <p className="opacity-90 leading-relaxed">
-                Create stunning, responsive websites tailored to your brand with modern design principles and seamless user experiences.
+                Aturila Digital creates stunning, responsive websites tailored to your brand with modern design principles and seamless user experiences.
               </p>
             </div>
 
@@ -311,9 +310,9 @@ function HomePage() {
               <div className="bg-cyan-300 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Zap size={32} className="text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Enhanced Marketing Solutions</h3>
+              <h3 className="text-2xl font-bold mb-4">AI-Enhanced Marketing Solutions</h3>
               <p className="opacity-90 leading-relaxed">
-                Automate your outreach to leads using AI for automatic personalized emails that convert prospects into customers.
+                Aturila Systems automates your outreach to leads using AI for automatic personalized emails that convert prospects into customers.
               </p>
             </div>
           </div>
@@ -325,9 +324,9 @@ function HomePage() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16 animate-fade-in-up">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to Transform Your Business?</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to Transform Your Business with Aturila Digital?</h2>
               <p className="text-xl opacity-90">
-                Let's discuss how AI automation can revolutionize your operations
+                Contact Aturila Systems to discuss how AI automation can revolutionize your operations
               </p>
             </div>
 
@@ -337,7 +336,7 @@ function HomePage() {
                   <div className="bg-cyan-400 w-16 h-16 rounded-full flex items-center justify-center mb-4">
                     <Mail size={24} className="text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Email Us</h3>
+                  <h3 className="text-xl font-semibold mb-2">Email Aturila Digital</h3>
                   <p className="opacity-90">aturilasystems@gmail.com</p>
                 </div>
                 
@@ -345,7 +344,7 @@ function HomePage() {
                   <div className="bg-blue-400 w-16 h-16 rounded-full flex items-center justify-center mb-4">
                     <Phone size={24} className="text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Call Us</h3>
+                  <h3 className="text-xl font-semibold mb-2">Call Aturila Systems</h3>
                   <p className="opacity-90">+44 7399826159</p>
                 </div>
                 
@@ -353,7 +352,7 @@ function HomePage() {
                   <div className="bg-cyan-300 w-16 h-16 rounded-full flex items-center justify-center mb-4">
                     <Instagram size={24} className="text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Follow Us</h3>
+                  <h3 className="text-xl font-semibold mb-2">Follow Aturila Digital</h3>
                   <a 
                     href="https://www.instagram.com/aturila.digital/" 
                     target="_blank" 
@@ -385,12 +384,12 @@ function HomePage() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <img 
               src="/Aturila_Systems_Ltd_Logo_copy-removebg-preview copy.png" 
-              alt="Aturila Systems" 
+              alt="Aturila Digital - Aturila Systems Logo" 
               className="h-8 w-auto mb-4 md:mb-0"
             />
             <div className="text-center md:text-right opacity-90">
-              <p>&copy; 2025 Aturila Systems. All rights reserved.</p>
-              <p className="text-sm mt-1">Empowering businesses through AI automation</p>
+              <p>&copy; 2025 Aturila Digital - Aturila Systems. All rights reserved.</p>
+              <p className="text-sm mt-1">Empowering businesses through AI automation solutions</p>
             </div>
           </div>
         </div>
