@@ -126,7 +126,7 @@ function HomePage() {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
-                Aturila Systems transforms your business with cutting-edge AI automation systems. 
+                Transform your business with cutting-edge AI automation systems. 
                Streamline operations, boost efficiency, and unlock unprecedented growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
